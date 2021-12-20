@@ -42,7 +42,7 @@ public class MyService extends Service {
 private void playtrackonline(String URL){
     mp.setAudioStreamType(AudioManager.STREAM_MUSIC);
     try {
-        mp.setDataSource("https://drive.google.com/uc?export=download&id=1TW2FXVXdhIcbMbN5tNFrurP996A4Mke1");
+        mp.setDataSource(URL);
         mp.prepare();
         mp.start();
         i=i+1;
